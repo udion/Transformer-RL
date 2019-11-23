@@ -1,6 +1,7 @@
-# Transformer-RL
+# Transformer Based Reinforcement Learning for Games
 
 This repository contains experimental models, written in PyTorch, which incorporate transformers in the Deep Q-Learning tasks, to see if they perform better than the RNN based version (DRQN) or simple DQN.
+
 
 # Requirements
 ```
@@ -32,5 +33,13 @@ The repo is structured in the following mannner
 ```
 
 To run a particular algorithm (say DQN) one can do ``python train_DQN.py`` this will generate the trace for that algorithm.
+
+# Results
+
+We have performed multiple experiments for each of the algorithms - DQN, DRQN and DTQN. Each algorithm was trained for 5000 episodes and we ran 10 different instances for each of the algorithms with random initialization. The folowing pictures illustrate the plots of scores over episodes for different runs. 
+
+![Scores vs Episodes for Multiple runs of DQN](https://github.com/udion/Transformer-RL/blob/master/src/DQN_traces.png)
+![Scores vs Episodes for Multiple runs of DRQN](https://github.com/udion/Transformer-RL/blob/master/src/DRQN_traces.png)
+![Scores vs Episodes for Multiple runs of DTQN](https://github.com/udion/Transformer-RL/blob/master/src/DTQN_traces.png)
 
 
